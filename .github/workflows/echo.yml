@@ -1,0 +1,17 @@
+name: Echo script
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Process the files
+      run: |
+        cd ${{ github.workspace }}
+        bash ./me.sh
