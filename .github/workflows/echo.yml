@@ -14,5 +14,4 @@ jobs:
     - name: Process the files
       run: |
         cd ${{ github.workspace }}
-        chmod a+x ./me.sh
         bash ./me.sh
